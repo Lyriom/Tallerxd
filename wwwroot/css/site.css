@@ -1,0 +1,107 @@
+/* Base font size */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* General Styles */
+body {
+    margin-bottom: 60px;
+    background-image: url('https://example.com/grass-texture.jpg'); /* Background resembling grass */
+    background-size: cover; /* Cover the entire background */
+    color: #333; /* Dark text color for contrast */
+    font-family: 'Arial', sans-serif; /* Font style */
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(0, 77, 0, 0.9); /* Dark green background with transparency */
+    color: #ffffff; /* White text color */
+    padding: 20px; /* Padding around header */
+    text-align: center; /* Center the text */
+    font-size: 2em; /* Increase header font size */
+    border-bottom: 5px solid #ffcc00; /* Yellow bottom border */
+}
+
+/* Button Styles */
+.btn {
+    background-color: #ffcc00; /* Bright yellow background for buttons */
+    color: #004d00; /* Dark green text color */
+    border: none; /* No border */
+    border-radius: 25px; /* Fully rounded corners */
+    padding: 12px 25px; /* Padding for buttons */
+    font-size: 1em; /* Button font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    font-weight: bold; /* Bold text */
+}
+
+    .btn:hover {
+        background-color: #ffc107; /* Darker yellow on hover */
+        transform: translateY(-2px); /* Slight lift effect */
+    }
+
+    .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+        box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb; /* Custom focus styles */
+    }
+
+/* Footer Styles */
+footer {
+    background-color: rgba(0, 77, 0, 0.9); /* Dark green background with transparency */
+    color: #ffffff; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 10px; /* Padding around footer */
+    position: absolute; /* Positioning for footer */
+    width: 100%; /* Full width */
+    bottom: 0; /* Stick to the bottom */
+}
+
+/* Card Styles */
+.card {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for cards */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px; /* Margin around cards */
+    padding: 20px; /* Padding inside cards */
+}
+
+/* Image Styles */
+img {
+    max-width: 100%; /* Responsive images */
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif; /* Font style for headings */
+    color: #ffcc00; /* Bright yellow color for headings */
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: rgba(0, 77, 0, 0.9); /* Dark green background for navbar */
+}
+
+.nav-link {
+    color: white; /* White text for nav links */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+    .nav-link:hover {
+        color: #ffcc00; /* Change color on hover */
+        text-decoration: underline; /* Underline on hover */
+    }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header, footer {
+        font-size: 1.2em; /* Smaller text on mobile */
+    }
+}
